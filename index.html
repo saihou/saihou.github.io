@@ -34,6 +34,47 @@
 	.hidemedelay {
 		opacity: 0;
 	}
+
+	.scroll-down {
+		position: absolute;
+		left: 50%;
+		bottom: 10px;
+		display: block;
+		text-align: center;
+		font-size: 20px;
+		z-index: 100;
+		text-decoration: none;
+		text-shadow: 0;
+		width: 20px;
+		height: 20px;
+		border-bottom: 2px solid #111;
+		border-right: 2px solid #111;
+		z-index: 9;
+		left: 50%;
+		-webkit-transform: translate(-50%, 0%) rotate(45deg);
+		-moz-transform: translate(-50%, 0%) rotate(45deg);
+		transform: translate(-50%, 0%) rotate(45deg);
+		-webkit-animation: fade_move_down 2s ease-in-out infinite;
+		-moz-animation: fade_move_down 2s ease-in-out infinite;
+		animation: fade_move_down 2s ease-in-out infinite;
+	}
+	
+/*animated scroll arrow animation*/
+@-webkit-keyframes fade_move_down {
+  0%   { -webkit-transform:translate(0,-5px) rotate(45deg); opacity: 1;  }
+  40%  { -webkit-transform:translate(0,15px) rotate(45deg); opacity: 1;   }
+  100% { -webkit-transform:translate(0,-5px) rotate(45deg); opacity: 1; }
+}
+@-moz-keyframes fade_move_down {
+  0%   { -moz-transform:translate(0,-5px) rotate(45deg); opacity: 1;  }
+  40%  { -webkit-transform:translate(0,15px) rotate(45deg); opacity: 1;   }
+  100% { -moz-transform:translate(0,-5px) rotate(45deg); opacity: 1; }
+}
+@keyframes fade_move_down {
+  0%   { transform:translate(0,-5px) rotate(45deg); opacity: 1;  }
+  40%  { -webkit-transform:translate(0,15px) rotate(45deg); opacity: 1;   }
+  100% { transform:translate(0,-5px) rotate(45deg); opacity: 1; }
+}
 </style>
 
 <body>
@@ -47,6 +88,7 @@
 					</p>
 				</h1>
 			</div>
+			<div class="scroll-down mb-5"></div>
 			<div class="col-1"></div>
 		</div>
 
@@ -136,6 +178,10 @@
 
 
 					</div>
+					<div class="card-footer">
+						<img src="images/unity_logo_sm.png" class="img-fluid rounded mr-3" alt="adpic logo">
+						Built with Unity (C#)
+					</div>
 				</div>
 			</div>
 			<div class="col-sm col-xs-12 my-3 mx-4">
@@ -205,6 +251,10 @@
 									src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' /></a>
 						</p>
 					</div>
+					<div class="card-footer">
+						<img src="images/unity_logo_sm.png" class="img-fluid rounded mr-3" alt="adpic logo">
+						Built with Unity (C#)
+					</div>
 				</div>
 			</div>
 			<div class="col-sm col-xs-12 my-3 mx-4">
@@ -267,6 +317,10 @@
 						</p>
 						</p>
 					</div>
+					<div class="card-footer">
+						<img src="images/unity_logo_sm.png" class="img-fluid rounded mr-3" alt="adpic logo">
+						Built with Unity (C#)
+					</div>
 				</div>
 			</div>
 
@@ -297,6 +351,10 @@
 								<a type="button" class="btn btn-outline-secondary mx-2" href="https://www.joysteak.com"
 									target="_blank">Visit website</a>
 							</p> -->
+					</div>
+					<div class="card-footer">
+						<img src="images/android_logo_sm.png" class="img-fluid rounded" alt="adpic logo"> Built with
+						Android (Java)
 					</div>
 				</div>
 			</div>
